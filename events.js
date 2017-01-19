@@ -48,11 +48,11 @@ function three() {
 
 // CREATE FUNCTION four HERE
 function four() {
-  var three = document.getElementById('four');
+  var four = document.getElementById('four');
 
-  three.addEventListener('mouseenter', makeOrange)
+  four.addEventListener('click', makeBrown)
 
-  three.addEventListener('mouseleave', makeWhite)
+  four.addEventListener('mouseleave', makeWhite)
 
 }
 
@@ -72,3 +72,7 @@ function makeGreen(evt){
 function makeOrange(evt){
   evt.target.style.backgroundColor = 'orange'
 }
+
+function makeBrown(evt){
+  evt.target.style.backgroundColor = 'brown'
+};
